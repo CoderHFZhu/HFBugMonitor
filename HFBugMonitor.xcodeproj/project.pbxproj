@@ -15,6 +15,8 @@
 		A716C6F3219012530001C476 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A716C6F2219012530001C476 /* main.m */; };
 		A716C6FD219012540001C476 /* HFBugMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A716C6FC219012540001C476 /* HFBugMonitorTests.m */; };
 		A716C708219012540001C476 /* HFBugMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A716C707219012540001C476 /* HFBugMonitorUITests.m */; };
+		A716C718219015600001C476 /* HFCrashMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A716C717219015600001C476 /* HFCrashMonitor.m */; };
+		A716C71B219016A50001C476 /* HFBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A716C71A219016A50001C476 /* HFBacktraceLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A716C703219012540001C476 /* HFBugMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFBugMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A716C707219012540001C476 /* HFBugMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFBugMonitorUITests.m; sourceTree = "<group>"; };
 		A716C709219012540001C476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A716C716219015600001C476 /* HFCrashMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFCrashMonitor.h; sourceTree = "<group>"; };
+		A716C717219015600001C476 /* HFCrashMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFCrashMonitor.m; sourceTree = "<group>"; };
+		A716C719219016A50001C476 /* HFBacktraceLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFBacktraceLogger.h; sourceTree = "<group>"; };
+		A716C71A219016A50001C476 /* HFBacktraceLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFBacktraceLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		A716C6E2219012510001C476 /* HFBugMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				A716C715219015290001C476 /* Crash */,
 				A716C6E3219012510001C476 /* AppDelegate.h */,
 				A716C6E4219012510001C476 /* AppDelegate.m */,
 				A716C6E6219012510001C476 /* ViewController.h */,
@@ -130,6 +137,17 @@
 				A716C709219012540001C476 /* Info.plist */,
 			);
 			path = HFBugMonitorUITests;
+			sourceTree = "<group>";
+		};
+		A716C715219015290001C476 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				A716C716219015600001C476 /* HFCrashMonitor.h */,
+				A716C717219015600001C476 /* HFCrashMonitor.m */,
+				A716C719219016A50001C476 /* HFBacktraceLogger.h */,
+				A716C71A219016A50001C476 /* HFBacktraceLogger.m */,
+			);
+			path = Crash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A716C6E8219012510001C476 /* ViewController.m in Sources */,
+				A716C71B219016A50001C476 /* HFBacktraceLogger.m in Sources */,
 				A716C6F3219012530001C476 /* main.m in Sources */,
+				A716C718219015600001C476 /* HFCrashMonitor.m in Sources */,
 				A716C6E5219012510001C476 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
